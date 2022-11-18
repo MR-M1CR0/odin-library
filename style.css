@@ -1,0 +1,122 @@
+body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  font-size: 20px;
+}
+
+.container {
+  border-style: groove;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.form-heading,
+.books-heading {
+  display: grid;
+  align-items: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.books {
+  color: #0f172a;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column: 2/3;
+  gap: 15px;
+  border-radius: 10px;
+  align-items: center;
+  padding: 15px;
+}
+
+.card {
+  background-color: #e2e8f0;
+  font-weight: bold;
+  height: 350px;
+  display: grid;
+  border-radius: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+input {
+  width: 200px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: #e2e8f0;
+}
+
+.btn {
+  margin-bottom: 25px;
+}
+
+.submit,
+.reset,
+.remove-button,
+.toggle-button,
+select {
+  font-weight: bold;
+  align-self: center;
+  padding: 10px 30px;
+  font-size: 25px;
+  border-radius: 10px;
+  color: #0f172a;
+  background-color: #e2e8f0;
+  transition: all .3s ease-in;
+}
+
+.btn-style {
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 25px;
+  border-radius: 10px;
+  color: #0f172a;
+  background-color: #e2e8f0;
+  transition: all .3s ease-in;
+}
+
+.btn-style:hover,
+.submit:hover,
+.reset:hover,
+.remove-button:hover,
+.toggle-button:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.remove-button,
+.toggle-button {
+  width: auto;
+  justify-self: center;
+  padding: 10px;
+}
+
+.toggle-button {
+  padding: 10px 30px
+}
+
+select {
+  margin-bottom: 40px;
+}

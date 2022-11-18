@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <title>Book Library</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-heading">
+      <h1>Add New Book To Library</h1>
+    </div>
+    <div class="books-heading">
+      <h1>Current Books In Library</h1>
+    </div>
+    <div class="form">
+      <button class="btn btn-style">NEW BOOK</button>
+      <form class="hidden">
+        <label for="title">Book Title
+          <input type="text" id="title" name="title" />
+        </label>
+        <label for="author">Book Author
+          <input type="text" id="author" name="author" />
+        </label>
+        <label for="pages">Page Count
+          <input type="number" id="pages" name="pages" />
+        </label>
+        <label for="read">Read
+          <select name="read" id="read">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+        <div>
+          <button type="reset" class="reset">Reset</button>
+          <button type="submit" class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="books"></div>
+  </div>
+</body>
+
+</html>
